@@ -29,3 +29,26 @@ var newPragraph = document.createElement("p");//it wil create p tag
  // remove elemant 
  var remove = document.getElementById("giftList");
  remove.remove();
+ // handel button 
+ function button(){
+     console.log(new Date());
+ } 
+//handel form js file
+// there way 
+ function changeBg(){
+  document.body.style.backgroundColor = "red"; 
+ }
+ function bgchanger(){
+  document.body.style.backgroundColor = "blue"; 
+ }
+ //one
+ const jsFormIds = document.getElementById('jsFormId'); 
+    jsFormIds.onclick =  changeBg;
+    //if i give ()after function on onclick it will call the function bofore press button
+//eventlistener
+ const jsFormIds2 = document.getElementById('changeBg'); 
+ jsFormIds2.addEventListener("click",bgchanger);
+ //addevenlistener pro
+ document.getElementById("color").addEventListener("click",function(){
+     document.body.style.color = "red";
+ });
