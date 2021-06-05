@@ -52,32 +52,44 @@ var newPragraph = document.createElement("p");//it wil create p tag
  document.getElementById("color").addEventListener("click",function(){
      document.body.style.color = "red";
  });
+
+
  // lets make a event bubble
- document.getElementById("containers").addEventListener("click",function(){
-    console.log("its click container");
-})
-//ul 
-document.getElementById("first").addEventListener("click",function(){
-    console.log("its click on first ");  
-})
-// li 
-document.getElementById("lorem").addEventListener("click",function(){
-    console.log("its click lorem"); 
-    event.stopPropagation();//it will stop bubble event
-    //event.stopImmediatePropagation(); it will stop all bubble event
-})
+//  document.getElementById("containers").addEventListener("click",function(){
+//     console.log("its click container");
+// })
+// //ul 
+// document.getElementById("first").addEventListener("click",function(){
+//     console.log("its click on first ");  
+// })
+// // li 
+// document.getElementById("lorem").addEventListener("click",function(){
+//     console.log("its click lorem"); 
+//     event.stopPropagation();//it will stop bubble event
+//     //event.stopImmediatePropagation(); it will stop all bubble event
+// })
+
+
 // remove item on click
-var items = document.getElementsByClassName("item");
-for (let i = 0; i < items.length; i++) {
-    const element = items[i];
-    element.addEventListener("click",function(){
-        console.log(this,event.target.innerText,event.target.parentNode); //it wil show the item and value 
-        //console.log("ele",element.parentNode);
-        event.target.parentNode.removeChild(event.target);
-    })
-}
+// var items = document.getElementsByClassName("item");
+// for (let i = 0; i < items.length; i++) {
+//     const element = items[i];
+//     element.addEventListener("click",function(){
+//         console.log(this,event.target.innerText,event.target.parentNode); //it wil show the item and value 
+//         //console.log("ele",element.parentNode);
+//         event.target.parentNode.removeChild(event.target);
+//     })
+// }
+
+
+//add new element by click
 document.getElementById("addNew").addEventListener("click",function(){ 
     var addNewItem = document.createElement("li");
     addNewItem.innerText="adaddfdf";
     document.getElementById("first").appendChild(addNewItem);
+})
+// best way to remove add element and default element
+document.getElementById("first").addEventListener("click",function(){
+    console.log(this,event.target);// "this" will grap the main parent and event.target will grape whick element i have click
+    event.target.parentNode.removeChild(event.target);
 })
