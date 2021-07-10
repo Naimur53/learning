@@ -1,174 +1,269 @@
 *{
-  margin:0;
-  padding:0;
+margin:0;
+padding:0;
 }
 
 
 .theme-dark.slider-wrapper{
-    background:none;
-    margin-left:200px;
+background:none;
+margin-left:200px;
 }
 .nivoSlider{
-    width:900px; 
+width:900px; 
 }
 h1{
-     
+
 }
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body {
-  background-color: #efefef;
+background-color: #efefef;
 }
 
 h1{
-    margin: 40px auto;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 90px;
-  color: red;
-  text-align: center;
-  letter-spacing: 5px;
-  text-shadow: 0 2px 1px #747474, 
-      -1px 3px 1px #767676, 
-      -2px 5px 1px #787878, 
-      -3px 7px 1px #7a7a7a,
-      -4px 9px 1px #7f7f7f,
-      -5px 11px 1px #838383,
-      -6px 13px 1px #878787,
-      -7px 15px 1px #8a8a8a, 
-      -8px 17px 1px #8e8e8e,
-      -9px 19px 1px #949494,
-      -10px 21px 1px #989898,
-      -11px 23px 1px #9f9f9f,
-      -12px 25px 1px #a2a2a2, 
-      -13px 27px 1px #a7a7a7,
-      -14px 29px 1px #adadad,
-      -15px 31px 1px #b3b3b3,
-      -16px 33px 1px #b6b6b6,
-      -17px 35px 1px #bcbcbc, 
-      -18px 37px 1px #c2c2c2,
-      -19px 39px 1px #c8c8c8,
-      -20px 41px 1px #cbcbcb,
-      -21px 43px 1px #d2d2d2,
-      -22px 45px 1px #d5d5d5, 
-      -23px 47px 1px #e2e2e2,
-      -24px 49px 1px #e6e6e6,
-      -25px 51px 1px #eaeaea,
-      -26px 53px 1px #efefef;
+margin: 40px auto;
+font-family: 'Ubuntu', sans-serif;
+font-size: 90px;
+color: red;
+text-align: center;
+letter-spacing: 5px;
+text-shadow: 0 2px 1px #747474, 
+  -1px 3px 1px #767676, 
+  -2px 5px 1px #787878, 
+  -3px 7px 1px #7a7a7a,
+  -4px 9px 1px #7f7f7f,
+  -5px 11px 1px #838383,
+  -6px 13px 1px #878787,
+  -7px 15px 1px #8a8a8a, 
+  -8px 17px 1px #8e8e8e,
+  -9px 19px 1px #949494,
+  -10px 21px 1px #989898,
+  -11px 23px 1px #9f9f9f,
+  -12px 25px 1px #a2a2a2, 
+  -13px 27px 1px #a7a7a7,
+  -14px 29px 1px #adadad,
+  -15px 31px 1px #b3b3b3,
+  -16px 33px 1px #b6b6b6,
+  -17px 35px 1px #bcbcbc, 
+  -18px 37px 1px #c2c2c2,
+  -19px 39px 1px #c8c8c8,
+  -20px 41px 1px #cbcbcb,
+  -21px 43px 1px #d2d2d2,
+  -22px 45px 1px #d5d5d5, 
+  -23px 47px 1px #e2e2e2,
+  -24px 49px 1px #e6e6e6,
+  -25px 51px 1px #eaeaea,
+  -26px 53px 1px #efefef;
 }   
 
 .sadiami{
-  background-color:red;
-  width:100px;
-  height:100px;
- 
-  transition:all 4s ease;
+background-color:red;
+width:100px;
+height:100px;
+
+transition:all 4s ease;
 
 }
 .sadiami:hover{
-  transform:rotate(360deg);
+transform:rotate(360deg);
 }
 .gol p:before{
-  content:"sadi ke toi";
-  color:red;
-  background-color:black;
+content:"sadi ke toi";
+color:red;
+background-color:black;
 
 }
 .gol p:after{
-  content:"sffa";
-  background:black;
+content:"sffa";
+background:black;
 }
 a{
-  margin:200px;
-  margin-bottom:200px;
-  text-decoration:none;
- 
-  display:inline-block;  
-  overflow:hidden;
+margin:200px;
+margin-bottom:200px;
+text-decoration:none;
+
+display:inline-block;  
+overflow:hidden;
 }
 span{
-  background-color: #ddd;
-  position:relative;
-  z-index:15;
-  
-  width:150px;
-  height:120px;
-  font-size:28px;
-  
+background-color: #ddd;
+position:relative;
+z-index:15;
+
+width:150px;
+height:120px;
+font-size:28px;
+
 }
 span:before{
-  content:"";
-  background:chartreuse;  
-  width:50%;
-  position:absolute;
-  transition:all .3s ease;
-  height:100%;
-  left:-50px;
-  z-index:-5;
+content:"";
+background:chartreuse;  
+width:50%;
+position:absolute;
+transition:all .3s ease;
+height:100%;
+left:-50px;
+z-index:-5;
 }
 a:hover span:before{
-  left:0;
+left:0;
 }
 span:after{
-  content:"";
-  background:rgb(104, 173, 35);  
-  width:50%;
-  position:absolute;
-  height:100%;
-  right:-50px;
-  z-index:-5;
-  transition:all .3s ease;
+content:"";
+background:rgb(104, 173, 35);  
+width:50%;
+position:absolute;
+height:100%;
+right:-50px;
+z-index:-5;
+transition:all .3s ease;
 }
 a:hover span:after{
-  right:0;
+right:0;
 }
 a:hover span{
-  background:none;
-  color:#fff;
+background:none;
+color:#fff;
 }
 ul{
-  list-style-type: none;
-  position:fixed;
-  top:100px;
-  right:0px; 
+list-style-type: none;
+position:fixed;
+top:100px;
+right:0px; 
 }
- 
+
 li{
-  
+
 }
 .icon-size{
-  margin:0;
-      
- 
-  text-decoration:none;
- 
-  display:inline;  
-  overflow:none;
+margin:0;
+  
+
+text-decoration:none;
+
+display:inline;  
+overflow:none;
 
 }
 .icon-size img{
-  width: 64px;
-  height:64px;
+width: 64px;
+height:64px;
 }
 #sticker{
-	background:green;
-	color:#fff;
+background:green;
+color:#fff;
 }
 .stick {
-	position:fixed;
-	top:0px;
-	z-index:999999999999;
+position:fixed;
+top:0px;
+z-index:999999999999;
 }
 .height{
-  height:1000px;
+height:1000px;
 }
 .main-js article p {
-  margin: 10px 0px;
-  border:1px solid red;
-  padding:20px;
+margin: 10px 0px;
+border:1px solid red;
+padding:20px;
 }
 :root{
-  --sadi:brown;
+--sadi:brown;
 }
 .advance-css p{
- color:var(--sadi) ;
+color:var(--sadi) ;
 }
+.miniP{
+overflow: hidden;
+border: 1px solid red;
+white-space: nowrap;
+width: 150px;
+text-overflow: ellipsis;
+}
+.field{
+border: 1px solid red;
+overflow: hidden;
+} 
+.field:hover .bat{
+transform: rotate(-60deg);
+transform-origin: top right;
+transition: transform 1s ease-in ;
+
+}
+
+.ball{
+width: 50px;
+height: 50px;
+border-radius: 25px;
+background: red;
+position: relative;
+left: 400px;
+}
+.field:hover .ball{
+transform: translate(1200px ,-100px);
+transition:transform 1s ease-out .8s; 
+
+}
+
+.box{
+width: 200px; 
+background: #000;
+border: 1px solid red; 
+}
+.main-container{
+display: flex;
+height: 400px;
+justify-content: center;
+align-items: stretch;
+}
+#box-1{
+  order: 2;
+  flex-grow: 2;
+}
+#box-2{
+  order: 1;
+  flex-grow:1 ;
+}
+  .grid-container{
+  display: grid;
+  grid-template-columns:repeat(10,1fr) 2fr;
+  grid-gap: 30px 10px;
+}
+.grid-cell{
+  border: 1px solid red;
+  font-size: 2em;
+}
+.calendar{
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: 3em repeat(5,1fr);
+  grid-gap: 1em;
+}
+.date, .day{
+  background-color: lightgray;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.other-month{
+  background: lightsalmon;
+}
+.day{
+  font-size: 2em;
+  color: white;
+  background-color: #000;
+}
+.flex-box-container{
+  display: flex; 
+  flex-wrap: wrap;
+}
+.food{
+  border: 3px solid red; 
+  width: 300px;
+
+}
+.food img{
+  width: 75%;
+} 
