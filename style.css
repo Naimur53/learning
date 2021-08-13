@@ -257,7 +257,9 @@ align-items: stretch;
 }
 .flex-box-container{
   display: flex; 
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 .food{
   border: 3px solid red; 
@@ -267,3 +269,87 @@ align-items: stretch;
 .food img{
   width: 75%;
 } 
+.content{
+  background: #000;
+  color: white; 
+  display: flex;
+  justify-content: center; 
+}
+
+.grid-layout{
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows:100px  86vh;
+  grid-gap: 4px;
+
+} 
+.second{
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  grid-template-rows:1fr;
+  grid-gap: 4px;
+
+}
+.second-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4px;
+
+}
+.third-inner{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap: 4px;
+ 
+}
+@media (max-width:520px ) {
+   
+  
+.second{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows:300px;
+  grid-gap: 4px;
+
+}
+.second-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:300px;
+
+  grid-gap: 4px;
+
+}
+.third-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:300px 300px 300px;
+
+  grid-gap: 4px;
+ 
+}
+}
+/* svg */
+#sig{
+  stroke-dasharray: 2697;
+  stroke-dashoffset: 2697;
+  animation: sig 4s ease  ;
+  animation-fill-mode: forwards;
+}
+@keyframes sig{
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+#sig-last{
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  animation: sig-last .3s ease  ;
+  animation-delay: 3.9s;
+  animation-fill-mode: forwards;
+}
+@keyframes sig-last{
+  to{
+    stroke-dashoffset: 0;
+  }
+}

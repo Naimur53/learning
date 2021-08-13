@@ -1,60 +1,60 @@
-var view =document.getElementsByClassName("author");
+var view = document.getElementsByClassName("author");
 console.log(view);
-for(var i =0;i<view.length;i++){
- var element = view[i];
- element.style.color ="red"; 
- element.innerHTML="sadi"+(i+1);
-} 
-document.querySelector("article .author-s").style.color =("blue");
+for (var i = 0; i < view.length; i++) {
+    var element = view[i];
+    element.style.color = "red";
+    element.innerHTML = "sadi" + (i + 1);
+}
+document.querySelector("article .author-s").style.color = ("blue");
 document.querySelectorAll("article");//it will give array
-document.body.style.backgroundColor="yellow"; 
+document.body.style.backgroundColor = "yellow";
 //set array 
-view[0].setAttribute("title","title is here js");
+view[0].setAttribute("title", "title is here js");
 //insert a html element by js
-var inside = document.getElementById("haha"); 
+var inside = document.getElementById("haha");
 var newPragraph = document.createElement("p");//it wil create p tag
- newPragraph.innerHTML =" this is add by js";
- inside.appendChild(newPragraph);
- //insert ul il
- var ul = document.getElementById("giftList");
- var newLi = document.createElement("li");
- newLi.innerHTML="added by js";
- ul.appendChild(newLi);
- //find chiled  or parent  div 
- var chiled = document.getElementById("giftList").childNodes;
- console.log(chiled);
- var parent = document.getElementById("giftList").parentNode;
- console.log(parent);
- parent.style.color = 'white';
- // remove elemant 
- var remove = document.getElementById("giftList");
- remove.remove();
- // handel button 
- function button(){
-     console.log(new Date());
- } 
+newPragraph.innerHTML = " this is add by js";
+inside.appendChild(newPragraph);
+//insert ul il
+var ul = document.getElementById("giftList");
+var newLi = document.createElement("li");
+newLi.innerHTML = "added by js";
+ul.appendChild(newLi);
+//find chiled  or parent  div 
+var chiled = document.getElementById("giftList").childNodes;
+console.log(chiled);
+var parent = document.getElementById("giftList").parentNode;
+console.log(parent);
+parent.style.color = 'white';
+// remove elemant 
+var remove = document.getElementById("giftList");
+remove.remove();
+// handel button 
+function button() {
+    console.log(new Date());
+}
 //handel form js file
 // there way 
- function changeBg(){
-  document.body.style.backgroundColor = "red"; 
- }
- function bgchanger(){
-  document.body.style.backgroundColor = "blue"; 
- }
- //one
- const jsFormIds = document.getElementById('jsFormId'); 
-    jsFormIds.onclick =  changeBg;
-    //if i give ()after function on onclick it will call the function bofore press button
+function changeBg() {
+    document.body.style.backgroundColor = "red";
+}
+function bgchanger() {
+    document.body.style.backgroundColor = "blue";
+}
+//one
+const jsFormIds = document.getElementById('jsFormId');
+jsFormIds.onclick = changeBg;
+//if i give ()after function on onclick it will call the function bofore press button
 //eventlistener
- const jsFormIds2 = document.getElementById('changeBg'); 
- jsFormIds2.addEventListener("click",bgchanger);
- //addevenlistener pro
- document.getElementById("color").addEventListener("click",function(){
-     document.body.style.color = "red";
- });
+const jsFormIds2 = document.getElementById('changeBg');
+jsFormIds2.addEventListener("click", bgchanger);
+//addevenlistener pro
+document.getElementById("color").addEventListener("click", function () {
+    document.body.style.color = "red";
+});
 
 
- // lets make a event bubble
+// lets make a event bubble
 //  document.getElementById("containers").addEventListener("click",function(){
 //     console.log("its click container");
 // })
@@ -83,13 +83,15 @@ var newPragraph = document.createElement("p");//it wil create p tag
 
 
 //add new element by click
-document.getElementById("addNew").addEventListener("click",function(){ 
+document.getElementById("addNew").addEventListener("click", function () {
     var addNewItem = document.createElement("li");
-    addNewItem.innerText="adaddfdf";
+    addNewItem.innerText = "adaddfdf";
     document.getElementById("first").appendChild(addNewItem);
 })
 // best way to remove add element and default element
-document.getElementById("first").addEventListener("click",function(){
-    console.log(this,event.target);// "this" will grap the main parent and event.target will grape whick element i have click
+document.getElementById("first").addEventListener("click", function () {
+    console.log(this, event.target);// "this" will grap the main parent and event.target will grape whick element i have click
     event.target.parentNode.removeChild(event.target);
 })
+
+// next event js 
