@@ -94,4 +94,81 @@ document.getElementById("first").addEventListener("click", function () {
     event.target.parentNode.removeChild(event.target);
 })
 
-// next event js 
+// next event js  
+const inputCon = document.getElementById('delete');
+const deleteBtn = document.getElementById("delete-btn");
+inputCon.addEventListener("focus", function () {
+    document.body.style.backgroundColor = "red";
+
+})
+
+inputCon.addEventListener("input", function (event) {
+    console.log(event.target.value);
+    console.log(event.target.value.length);
+    if (event.target.value == "delete") {
+        deleteBtn.removeAttribute("disabled");
+    }
+    else {
+        deleteBtn.setAttribute("disabled", true);
+    }
+})
+
+
+inputCon.addEventListener("blur", function () {
+    document.body.style.backgroundColor = "#fff";
+})
+
+
+//event bubble
+document.getElementById("ul-container").addEventListener("click", function (e) {
+    // console.log("ul click");
+    e.target.style.backgroundColor = "red";
+    console.log(e.target);
+})
+document.getElementById("first-Element").addEventListener("click", function (e) {
+    console.log("fast  click");
+    e.stopPropagation();
+})
+// document.getElementById("first-Element").addEventListener("click", function (e) {
+//     console.log("fast  click");
+//     e.stopPropagation()
+// })
+// document.getElementById("first-Element").addEventListener("click", function (e) {
+//     console.log("fast  click");
+//     e.stopPropagation()
+// })
+// document.getElementById("first-Element").addEventListener("click", function (e) {
+//     console.log("fast  click");
+//     e.stopPropagation()
+// })
+
+// event deleget 
+const adding = document.getElementById("adding");
+const heyContainer = document.getElementById("hey-container");
+heyContainer.addEventListener("click", function (e) {
+    e.target.remove();
+
+})
+function hi() {
+    const newDiv = document.createElement("div");
+    newDiv.innerText = "hmm";
+    heyContainer.appendChild(newDiv);
+}
+
+// amader section
+// const imgContainer = document.getElementById("img-container");
+// imgContainer.addEventListener("dblclick", function (e) {
+//     e.target.style.display = "none";
+//     document.getElementById("secondImg").style.display = "block"
+// })
+function justClick(first) {
+    if (first == "first") {
+        document.getElementById("firstImg").style.display = "none";
+        document.getElementById("secondImg").style.display = "block";
+    }
+    else if (first == "secondImg") {
+        document.getElementById("firstImg").style.display = "block";
+        document.getElementById("secondImg").style.display = "none";
+    }
+
+}
