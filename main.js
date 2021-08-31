@@ -118,17 +118,15 @@ inputCon.addEventListener("blur", function () {
     document.body.style.backgroundColor = "#fff";
 })
 
-
 //event bubble
-document.getElementById("ul-container").addEventListener("click", function (e) {
-    // console.log("ul click");
-    e.target.style.backgroundColor = "red";
-    console.log(e.target);
+document.getElementById("ul-container").addEventListener("click", function (event) {
+    event.target.style.backgroundColor = "red";
+    console.log(event.target.innerText);
 })
-document.getElementById("first-Element").addEventListener("click", function (e) {
-    console.log("fast  click");
-    e.stopPropagation();
-})
+// document.getElementById("first-Element").addEventListener("click", function (soyabs) {
+//     console.log(document.getElementById("first-Element").innerText);
+//     soyabs.stopPropagation();
+// })
 // document.getElementById("first-Element").addEventListener("click", function (e) {
 //     console.log("fast  click");
 //     e.stopPropagation()
@@ -143,17 +141,17 @@ document.getElementById("first-Element").addEventListener("click", function (e) 
 // })
 
 // event deleget 
-const adding = document.getElementById("adding");
-const heyContainer = document.getElementById("hey-container");
-heyContainer.addEventListener("click", function (e) {
-    e.target.remove();
+// const adding = document.getElementById("adding");
+// const heyContainer = document.getElementById("hey-container");
+// heyContainer.addEventListener("click", function (e) {
+//     e.target.remove();
 
-})
-function hi() {
-    const newDiv = document.createElement("div");
-    newDiv.innerText = "hmm";
-    heyContainer.appendChild(newDiv);
-}
+// })
+// function hi() {
+//     const newDiv = document.createElement("div");
+//     newDiv.innerText = "hmm";
+//     heyContainer.appendChild(newDiv);
+// }
 
 // amader section
 // const imgContainer = document.getElementById("img-container");
@@ -161,14 +159,29 @@ function hi() {
 //     e.target.style.display = "none";
 //     document.getElementById("secondImg").style.display = "block"
 // })
-function justClick(first) {
-    if (first == "first") {
-        document.getElementById("firstImg").style.display = "none";
-        document.getElementById("secondImg").style.display = "block";
-    }
-    else if (first == "secondImg") {
-        document.getElementById("firstImg").style.display = "block";
-        document.getElementById("secondImg").style.display = "none";
-    }
+// function justClick(first) {
+//     if (first == "first") {
+//         document.getElementById("firstImg").style.display = "none";
+//         document.getElementById("secondImg").style.display = "block";
+//     }
+//     else if (first == "secondImg") {
+//         document.getElementById("firstImg").style.display = "block";
+//         document.getElementById("secondImg").style.display = "none";
+//     }
 
-}
+// }
+// //soyab code
+// document.getElementById("firstImg").addEventListener("click",function()), function () {
+//     console.log()
+// });
+// console.log();
+
+// // amar code 
+// const sadis = document.getElementsByClassName("secondImg");
+// console.log(document.getElementsByClassName("secondImg"));
+// sadis[0].style.display = 'none';
+// sadis[1].style.display = 'none';
+// for (let sadi = 0; sadi < sadis.length; sadi++) {
+//     const element = sadis[sadi];
+//     element.style.display = "none";
+// } 
